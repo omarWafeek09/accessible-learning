@@ -140,7 +140,7 @@ const StudentLayout = ({
           >
             <div className={styles.brandMark}>ع</div>
             <div className={styles.brandText}>
-              <span className={styles.brandTitle}>AccessLearn</span>
+              <span className={styles.brandTitle}>خطوة همة</span>
               <span className={styles.brandSub}>لوحة الطالب</span>
             </div>
           </button>
@@ -245,7 +245,7 @@ const StudentLayout = ({
           >
             <div className={styles.brandMark}>ع</div>
             <div className={styles.brandText}>
-              <span className={styles.brandTitle}>AccessLearn</span>
+              <span className={styles.brandTitle}>خطوة همة</span>
               <span className={styles.brandSub}>لوحة الطالب</span>
             </div>
           </button>

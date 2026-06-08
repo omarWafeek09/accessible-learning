@@ -77,7 +77,7 @@ const Navbar = () => {
           style={{ color: "var(--text)" }}
         >
           <FaAccessibleIcon style={{ color: "#58cc02" }} />
-          <span>AccessLearn</span>
+          <span>خطوة همة</span>
         </a>
 
         <button

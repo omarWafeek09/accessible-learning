@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-lg-3 pe-lg-5">
             <div className="d-flex align-items-center gap-2 mb-3">
               <FaAccessibleIcon style={{ fontSize: '1.75rem', color: 'var(--primary)' }} aria-hidden="true" />
-              <span className="fs-4 fw-bold" style={{ color: 'var(--text)' }}>AccessLearn</span>
+              <span className="fs-4 fw-bold" style={{ color: 'var(--text)' }}>خطوة همة</span>
             </div>
             <p className="mb-3" style={{ color: 'var(--text-light)', lineHeight: '1.7' }}>
               تمكين المتعلمين من جميع القدرات بتعليم شامل سهل الوصول. 
@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className="pt-4 d-flex justify-content-between align-items-center flex-wrap gap-3" style={{ borderTop: '2px solid var(--border)' }}>
           <p className="mb-0" style={{ color: 'var(--text-light)', fontSize: '0.875rem' }}>
-            © {currentYear} AccessLearn. جميع الحقوق محفوظة.
+            © {currentYear} خطوة همة. جميع الحقوق محفوظة.
           </p>
           <nav className="d-flex gap-4" aria-label="الروابط القانونية">
             {['الخصوصية', 'الشروط', 'ملفات تعريف الارتباط'].map((link, i) => (

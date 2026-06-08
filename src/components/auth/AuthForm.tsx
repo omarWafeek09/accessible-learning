@@ -412,7 +412,7 @@ const AuthForm = ({ mode, onSwitchMode, onSubmit }: AuthFormProps) => {
             <span style={{ fontSize: '3.5rem' }}>♿</span>
           </motion.div>
 
-          <h2 className="display-4 fw-bold mb-3" style={{ color: 'var(--text)' }}>AccessLearn</h2>
+          <h2 className="display-4 fw-bold mb-3" style={{ color: 'var(--text)' }}>خطوة همة</h2>
           <p className="lead mb-4" style={{ color: 'var(--text-light)', maxWidth: '400px' }}>
             منصتك التعليمية الشاملة للمتعلمين من جميع القدرات
           </p>

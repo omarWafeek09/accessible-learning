@@ -8,7 +8,7 @@ import { useTheme } from '../../../context/ThemeContext';
 const contactInfo = [
   { icon: <FaPhone />, title: 'الهاتف', value: '+966 55 123 4567', desc: 'الأحد - الخميس: 9ص - 6م' },
   { icon: <FaWhatsapp />, title: 'واتساب', value: '+966 55 123 4567', desc: 'متاح 24/7' },
-  { icon: <FaEnvelope />, title: 'البريد الإلكتروني', value: 'info@accesslearn.com', desc: 'نرد خلال 24 ساعة' },
+  { icon: <FaEnvelope />, title: 'البريد الإلكتروني', value: 'info@خطوة همة.com', desc: 'نرد خلال 24 ساعة' },
   { icon: <FaMapMarkerAlt />, title: 'الموقع', value: 'الرياض، المملكة العربية السعودية', desc: 'الرياض - حي العليا' }
 ];
 
