@@ -1,0 +1,28 @@
+.carouselButton {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.carouselButton:hover:not(:disabled) {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carouselButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.carouselButton:focus-visible {
+  outline: 2px solid #58cc02;
+  outline-offset: 2px;
+}
+
+.carouselContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

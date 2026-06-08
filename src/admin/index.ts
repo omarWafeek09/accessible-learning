@@ -1,0 +1,23 @@
+// src\admin\index.ts
+export { default as AdminLayout } from './layouts/AdminLayout';
+export { default as AdminHomePage } from './pages/AdminHomePage';
+export { default as AdminAnalyticsPage } from './pages/AdminAnalyticsPage';
+export { default as AdminUsersPage } from './pages/AdminUsersPage';
+export { default as AdminCoursesPage } from './pages/AdminCoursesPage';
+export { default as AdminSettingsPage } from './pages/AdminSettingsPage';
+export { default as AdminCommunityPage } from './pages/AdminCommunityPage';
+export { default as AdminGamesPage } from './pages/AdminGamesPage';
+export { default as AdminExpensesPage } from './pages/AdminExpensesPage';
+export { default as AdminMessagesPage } from './pages/AdminMessagesPage';
+export { default as AdminNotificationsPage } from './pages/AdminNotificationsPage';
+export { default as AdminTreatmentProtocolsPage } from './pages/AdminTreatmentProtocolsPage';
+export { default as AdminSchedulePage } from './pages/AdminSchedulePage';
+export { default as AdminSalaryPage } from './pages/AdminSalaryPage';
+export { default as AdminPartnersPage } from './pages/AdminPartnersPage';
+export { default as AdminNotesPage } from './pages/AdminNotesPage';
+export { default as AdminPlansPage } from './pages/AdminPlansPage';
+export { default as AdminHiringPage } from './pages/AdminHiringPage';
+export { default as AdminAttendancePage } from './pages/AdminAttendancePage';
+export { default as AdminLiveSessionsPage } from './pages/AdminLiveSessionsPage';
+export { default as CourseLessonsExams } from './pages/CourseLessonsExams';
+export { default as CourseSections } from './pages/CourseSections';

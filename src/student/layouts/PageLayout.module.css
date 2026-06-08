@@ -1,0 +1,88 @@
+/* src/student/layouts/PageLayout.module.css */
+.pageHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 28px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  margin-bottom: 24px;
+  font-family: almoral;
+}
+
+.pageHeroLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pageHeroIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  flex-shrink: 0;
+}
+
+.accentGreen .pageHeroIcon {
+  background-color: var(--primary);
+}
+.accentPurple .pageHeroIcon {
+  background-color: var(--secondary);
+}
+.accentSun .pageHeroIcon {
+  background-color: var(--warning);
+  color: var(--text);
+}
+.accentBlue .pageHeroIcon {
+  background-color: #1cb0f6;
+}
+
+.pageHeroTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.pageHeroSub {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 0.95rem;
+  max-width: 540px;
+}
+
+.pageHeroAction {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .pageHero {
+    padding: 18px 20px;
+  }
+  .pageHeroTitle {
+    font-size: 1.2rem;
+  }
+  .pageHeroSub {
+    font-size: 0.85rem;
+  }
+  .pageHeroIcon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  .pageHeroAction {
+    display: none;
+  }
+}
+@font-face {
+  font-family: almoral;
+  src: url(../../assets/fonts/Almarai-Bold.ttf);
+}

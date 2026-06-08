@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Move-Item -Path Categories/* -Destination home/Categories/ -Force; Move-Item -Path Courses/* -Destination courses/ -Force\")",
+      "Bash(powershell -Command \"Remove-Item -Path Categories -Recurse -Force; Remove-Item -Path Courses -Recurse -Force; Remove-Item -Path Navbar -Recurse -Force; Remove-Item -Path Footer -Recurse -Force; Remove-Item -Path Features -Recurse -Force; Remove-Item -Path Games -Recurse -Force; Remove-Item -Path Reviews -Recurse -Force; Remove-Item -Path Community -Recurse -Force; Remove-Item -Path Subscription -Recurse -Force; Remove-Item -Path Contact -Recurse -Force; Remove-Item -Path Hero -Recurse -Force\")",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
