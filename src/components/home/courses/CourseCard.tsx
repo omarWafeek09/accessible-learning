@@ -40,7 +40,7 @@ const CourseCard = memo(({
   const [favorited, setFavorited] = useState(false);
 
   const handleClick = () => {
-    window.location.href = '/course/1';
+     window.location.href = '/course/1';
   };
 
   const levelInfo = levelConfig[level] || levelConfig['مبتدئ'];
