@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEye, FaDeaf, FaHandsHelping, FaBrain, FaHeart, FaBook, FaComments, FaLightbulb, FaCheck, FaWrench, FaPlus, FaMinus } from 'react-icons/fa';
 import { useTheme } from '../../../context/ThemeContext';
-
+let clickSound = new Audio('../../../src/assets/audio/click.mp3')
 const disabilityTypes = [
   { 
     id: 'visual', 
@@ -123,7 +123,10 @@ const DisabilityTypes = () => {
           <motion.div className="row g-3 justify-content-center" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             {disabilityTypes.map((d) => (
               <motion.div key={d.id} className="col-6 col-md-3" variants={itemVariants}>
-                <motion.button onClick={() => setSelectedId(d.id)} className="w-100 p-4 border-0" style={{ borderRadius: '20px', backgroundColor: theme === 'dark' ? 'var(--surface-elevated)' : '#f5f5f5', cursor: 'pointer' }} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                <motion.button onClick={() => {setSelectedId(d.id);clickSound.play(); console.log("omar")}
+                           
+                  
+                } className="w-100 p-4 border-0" style={{ borderRadius: '20px', backgroundColor: theme === 'dark' ? 'var(--surface-elevated)' : '#f5f5f5', cursor: 'pointer' }} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                   <div className="d-flex flex-column align-items-center gap-3">
                     <div style={{ fontSize: '2.5rem', color: d.color }}>{d.icon}</div>
                     <span className="fw-bold" style={{ color: 'var(--text)' }}>{d.title}</span>
@@ -141,7 +144,7 @@ const DisabilityTypes = () => {
                     const isSelected = selectedId === d.id;
                     return (
                       <motion.div key={d.id} className="col-6 col-lg-12" variants={itemVariants}>
-                        <motion.button onClick={() => setSelectedId(d.id)} className="w-100 p-3 border-0" style={{ borderRadius: '16px', backgroundColor: isSelected ? d.color : theme === 'dark' ? 'var(--surface-elevated)' : '#f5f5f5', cursor: 'pointer' }} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+                        <motion.button onClick={() => {  setSelectedId(d.id) ; clickSound.play(); console.log("omar")}} className="w-100 p-3 border-0" style={{ borderRadius: '16px', backgroundColor: isSelected ? d.color : theme === 'dark' ? 'var(--surface-elevated)' : '#f5f5f5', cursor: 'pointer' }} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                           <div className="d-flex align-items-center gap-3">
                             <div style={{ fontSize: '1.5rem', color: isSelected ? '#fff' : d.color }}>{d.icon}</div>
                             <span className="fw-bold" style={{ color: isSelected ? '#fff' : 'var(--text)' }}>{d.title}</span>

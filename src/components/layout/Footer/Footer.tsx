@@ -1,4 +1,7 @@
-import { FaAccessibleIcon, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaAccessibleIcon, FaYoutube } from 'react-icons/fa';
+import { BsTwitterX } from 'react-icons/bs';
+import { RiFacebookFill } from 'react-icons/ri';
+import {GrInstagram} from 'react-icons/gr'
 import { useTheme } from '../../../context/ThemeContext';
 
 const Footer = () => {
@@ -20,24 +23,24 @@ const Footer = () => {
             </p>
             <nav className="d-flex gap-3" aria-label="روابط وسائل التواصل الاجتماعي">
               {[
-                { icon: <FaFacebook />, label: 'فيسبوك', href: '#facebook' },
-                { icon: <FaTwitter />, label: 'تويتر', href: '#twitter' },
-                { icon: <FaInstagram />, label: 'انستغرام', href: '#instagram' },
-                { icon: <FaYoutube />, label: 'يوتيوب', href: '#youtube' }
+                { icon: <RiFacebookFill />, label: 'فيسبوك', href: '#facebook' ,bg:"#4d93e4" ,cl:"white" },
+                { icon: <BsTwitterX />, label: 'تويتر', href: '#twitter' ,bg:"black"  ,cl:"white"},
+                { icon: <GrInstagram />, label: 'انستغرام', href: '#instagram' ,bg:"linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)"  ,cl:"white"},
+                { icon: <FaYoutube />, label: 'يوتيوب', href: '#youtube' ,bg :"red"  ,cl:"white"}
               ].map((social, i) => (
                 <a
                   key={i}
                   href={social.href}
                   className="d-flex align-items-center justify-content-center"
                   style={{ 
-                    width: '40px', 
-                    height: '40px', 
+                    width: '60px', 
+                    height: '60px', 
                     borderRadius: '12px',
-                    backgroundColor: 'var(--surface-elevated)',
-                    border: '2px solid var(--border)',
-                    color: 'var(--text-light)',
+                    background: social.bg,
+                    color: social.cl,
                     textDecoration: 'none',
-                    transition: 'all 0.15s ease'
+                    transition: 'all 0.15s ease',
+                    fontSize:"30px"
                   }}
                   aria-label={`تابعنا على ${social.label}`}
                 >
@@ -92,17 +95,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div 
-          className="mt-4 p-3 d-flex align-items-center gap-2 rounded-3"
-          style={{ backgroundColor: 'var(--surface-elevated)', border: '2px solid var(--border)' }}
-          role="note"
-        >
-          <FaAccessibleIcon style={{ color: 'var(--primary)' }} aria-hidden="true" />
-          <span style={{ color: 'var(--text-light)', fontSize: '0.875rem' }}>
-            هذا الموقع مصمم لتلبية معايير إمكانية الوصول WCAG 2.1 AA. 
-            إذا واجهت أي عقبات، يرجى التواصل معنا.
-          </span>
-        </div>
+       
       </div>
     </footer>
   );

@@ -1,35 +1,43 @@
-import { FaEye, FaBrain, FaHandPointer, FaUserFriends, FaBookOpen, FaHeart } from 'react-icons/fa';
+import { FaRegHandPointer } from 'react-icons/fa';
+import { RiBrain2Line } from "react-icons/ri";
+import {  TiEyeOutline } from "react-icons/ti";
+import { PiCloverLight} from "react-icons/pi";
+import { LuBookMarked } from "react-icons/lu";
+import { TbUsersGroup } from "react-icons/tb";
+
+
 import { motion } from 'framer-motion';
 import CategoryCard from './CategoryCard';
+import { style } from 'framer-motion/client';
 
 const categories = [
   {
-    icon: <FaEye aria-hidden="true" />,
+    icon: <TiEyeOutline aria-hidden="true" />,
     title: 'التعلم البصري',
     description: 'دروس قائمة على الصور وأدوات بصرية لتعزيز الفهم.'
   },
   {
-    icon: <FaBrain aria-hidden="true" />,
+    icon: <RiBrain2Line aria-hidden="true" />,
     title: 'التنمية المعرفية',
     description: 'أنشطة مصممة لتقوية مهارات التفكير وحل المشكلات.'
   },
   {
-    icon: <FaHandPointer aria-hidden="true" />,
+    icon: <FaRegHandPointer aria-hidden="true" />,
     title: 'المهارات الحركية',
     description: 'تمارين حركية دقيقة وأكثر للبناء الجسدي.'
   },
   {
-    icon: <FaUserFriends aria-hidden="true" />,
+    icon: <TbUsersGroup aria-hidden="true" />,
     title: 'المهارات الاجتماعية',
     description: 'دروس تفاعلية حول التواصل وبناء العلاقات.'
   },
   {
-    icon: <FaBookOpen aria-hidden="true" />,
+    icon: <LuBookMarked aria-hidden="true" />,
     title: 'القراءة والكتابة',
     description: 'برامج محو أمية مخصصة لاحتياجات التعلم المتنوعة.'
   },
   {
-    icon: <FaHeart aria-hidden="true" />,
+    icon: <PiCloverLight aria-hidden="true" />,
     title: 'النمو العاطفي',
     description: 'موارد للتنظيم العاطفي والوعي الذاتي.'
   }
@@ -49,7 +57,7 @@ const itemVariants = {
 };
 
 const Categories = () => (
-  <section className="py-5 position-relative" style={{ backgroundColor: 'var(--surface)' }} aria-labelledby="categories-title">
+  <section className="py-5 position-relative"  style={{ backgroundColor: 'var(--surface)' }} aria-labelledby="categories-title">
     <div className="container">
       <motion.header
         className="text-center mb-5"

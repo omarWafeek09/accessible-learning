@@ -1,6 +1,8 @@
 // src\components\home\Features\Features.tsx
 import { motion } from 'framer-motion';
-import { FaBookReader, FaGamepad, FaUsers, FaRoute } from 'react-icons/fa';
+import { FaBookReader, FaGamepad, FaUsers } from 'react-icons/fa';
+import { LuRoute } from "react-icons/lu";
+
 import FeatureCard from './FeatureCard';
 
 const features = [
@@ -20,7 +22,7 @@ const features = [
     description: 'تواصل مع آباء ومعلمين ومتخصصين يفهمون رحلتك الفريدة.'
   },
   {
-    icon: <FaRoute aria-hidden="true" />,
+    icon: <LuRoute aria-hidden="true" />,
     title: 'مسارات مخصصة',
     description: 'رحلات تعليمية مخصصة تتكيف مع نقاط القوة والتحديات وأسلوب التعلم المفضل لكل طفل.'
   }
